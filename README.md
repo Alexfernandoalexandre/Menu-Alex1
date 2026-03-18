@@ -1,4 +1,6 @@
- <!DOCTYPE html>
+index.html   ← página inicial (slide + botão)
+menu.html    ← menu completo
+imagens...
 <html lang="pt">
 <head>
 <meta charset="UTF-8">
@@ -10,7 +12,7 @@ header { display:flex; align-items:center; padding:10px; position:fixed; top:0; 
 header img { height:50px; margin-right:10px; }
 header h1 { font-size:18px; color:red; margin:0; }
 
-.slide { max-width:500px; margin:80px auto 20px; display:none; animation:fade 1s; text-align:center; }
+.slide { max-width:500px; margin:80px auto 20px; display:none; animation:fade 2s; text-align:center; }
 .slide img { width:100%; border-radius:12px; }
 @keyframes fade { from {opacity:0} to {opacity:1} }
 
@@ -27,11 +29,9 @@ function showSlides() {
     if(slideIndex>slides.length) slideIndex=1;
     slides[slideIndex-1].style.display="block";
     setTimeout(showSlides,3000);
-}
-window.onload = showSlides;
-</script>
-</head>
-<body>
+<a href="menu.html" style="text-decoration:none;">
+  <button>Entrar no Menu</button>
+</a>
 
 <header>
 <img src="logo.png" alt="Alex Sumos Naturais & Lanches">
@@ -129,7 +129,18 @@ function pedir(item){
 <div class="card"><img src="batata.jpg"><div class="info">Dose de batata<div class="price">100 MZN</div></div><button onclick="pedir('Dose de batata')">Pedir</button></div>
 </div>
 
-<a class="whatsapp" href="https://wa.me/258846874780" target="_blank">💬</a>
-
-</body>
-</html>
+<a class="whatsapp" href="https://wa.me/258846874780" ="_blank">💬</a>
+frango.jpg
+batata.jpg
+sandes_simples.jpg
+sandes_mista.jpg
+sopa_feijao.jpg
+sopa_legumes.jpg
+manga.jpg
+laranja.jpg
+ananas.jpg
+melancia.jpg
+maracuja.jpg
+goiaba.jpg
+iogurte_malambe.jpg
+logo.png
